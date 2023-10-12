@@ -4,7 +4,7 @@
 /**
  * main - Print text to standard error (2) using write
  *
- * Return - 1
+ * Return: 1
  */
 int main(void)
 {
