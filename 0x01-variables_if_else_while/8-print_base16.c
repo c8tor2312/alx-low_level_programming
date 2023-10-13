@@ -9,11 +9,11 @@ int main(void)
 {
 	int l = '0';
 
-	while (l <= 'F')
+	while (l <= 'f')
 	{
 		putchar(l);
 		if (l == '9')
-			l += 8;
+			l += 40;
 		else
 			l++;
 	}
