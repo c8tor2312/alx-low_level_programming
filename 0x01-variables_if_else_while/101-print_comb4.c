@@ -17,25 +17,22 @@ int main(void)
 		j = 0;
 		while (j < 10)
 		{
-			if (j > i)
+			k = 0;
+			while (k < 10)
 			{
-				k = 0;
-				while (k < 10)
+				if (j > i && k > j)
 				{
-					if (k > j)
-					{
-						putchar('0' + i);
-						putchar('0' + j);
-						putchar('0' + k);
+					putchar('0' + i);
+					putchar('0' + j);
+					putchar('0' + k);
 
-						if (i != 7 || j != 8 || k != 9)
-						{
-							putchar(',');
-							putchar(' ');
-						}
+					if (i != 7 || j != 8 || k != 9)
+					{
+						putchar(',');
+						putchar(' ');
 					}
-					k++;
 				}
+				k++;
 			}
 			j++;
 		}
