@@ -20,4 +20,5 @@ int main(void)
 		x++;
 	}
 	printf("%d\n", m);
+	return (0);
 }
