@@ -1,35 +1,33 @@
-#include "main.h"
 #include <stdio.h>
 
 /**
- * main - entry point for fizzBuzz program for 3x and 5x
- * return: 0
+ * main - main block, solve fizz buzz from numbers 1 to 100
+ * Description: Multiples of 3, print Fizz. Multiples of 5, print Buzz.
+ * Multiples of both 3 and 5 should print FizzBuzz.
+ * Return: 0
  */
+
 int main(void)
 {
-	int n;
+	int i;
 
-	n = 1;
-	while (n <= 100)
+	i = 1;
+	while (i <= 100)
 	{
-		if ((n % 3 == 0) && (n % 5 == 0))
-		{
-			printf("FizzBuzz ");
-		}
-		else if (n % 3 == 0)
-		{
-			printf("Fizz ");
-		}
-		else if (n % 5 == 0)
-		{
-			printf("Buzz ");
-		}
+		if (i % 3 == 0 && i % 5 == 0)
+			printf("FizzBuzz");
+		else if (i % 3 == 0)
+			printf("Fizz");
+		else if (i % 5 == 0)
+			printf("Buzz");
 		else
-		{
-			printf("%d ", n);
-		}
-		n++;
+			printf("%d", i);
+
+		if (i != 100)
+			printf(" ");
+		i++;
 	}
 	printf("\n");
+
 	return (0);
 }
