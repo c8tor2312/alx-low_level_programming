@@ -2,9 +2,9 @@
 
 /**
  * _strncpy - copy n bytes of a string to destination
- * @dest - destination string
- * @src - source string
- * @n - number of bytes
+ * @dest: destination string
+ * @src: source string
+ * @n: number of bytes
  * Return: pointer to destination string
  */
 char *_strncpy(char *dest, char *src, int n)
