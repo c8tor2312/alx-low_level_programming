@@ -7,20 +7,21 @@
  */
 void print_number(int n)
 {
-	int i, j;
+	int i, j
+	unsigned int b = n;;
 	char buffer[16];
 
-	if (n == 0)
+	if (b == 0)
 	{
 		_putchar('0');
 	}
-	if (n < 0)
+	if (b < 0)
 	{
 		_putchar('-');
 		n = -n;
 	}
 	i = 0;
-	while (n > 0)
+	while (b > 0)
 	{
 		buffer[i] = '0' + n % 10;
 		n /= 10;
