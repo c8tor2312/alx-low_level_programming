@@ -7,31 +7,27 @@
  */
 void print_number(int n)
 {
-	char d[10];
-	int x;
-
-	if (n < 0)
-	{
-		_putchar('-');
-		n = n * -1;
-	}
+	int i, j;
+	char buffer[16];
 
 	if (n == 0)
 	{
 		_putchar('0');
-		return;
 	}
-	x = 0;
+	if (n < 0)
+	{
+		_putchar('-');
+		n = -n;
+	}
+	i = 0;
 	while (n > 0)
 	{
-		d[x] = (n % 10) + '0';
-		n = n / 10;
-		x++;
+		buffer[i] = '0' + n % 10;
+		n /= 10;
+		i++;
 	}
-	x = x - 1;
-	while (x >= 0)
+	for (j = i - 1; j >= 0; j--)
 	{
-		_putchar(d[x]);
-		x--;
+		_putchar(buffer[j]);
 	}
 }
